@@ -46,9 +46,11 @@ export default function Header() {
             border-b-[3px] border-b-transparent 
             ${
               pathMatchRoute("/sign-in") || pathMatchRoute("/profile") &&
-               "text-black border-b-red-500"}`}
-            onClick={()=> navigate("/sign-in")}>
-              {pageState} </li>
+               "text-black border-b-red-500"
+              }`}
+            onClick={()=> navigate("/profile")}>
+              {pageState} 
+            </li>
           </ul>
         </div>
       </header>
